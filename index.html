@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bwolf Agency - Expert event management services for both corporate and private events in Łódź, Poland.">
+    <meta name="keywords" content="Event Management, Corporate Events, Private Events, Bwolf Agency, Łódź">
+    <title>Bwolf Agency | Event Management Services</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #f8f9fa;
+            --secondary-color: black;
+            --background-color: black;
+            --text-color: #f8f9fa;
+            --dark-bg: #333;
+            --dark-text: #f8f9fa;
+        }
+        body, html {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url('images/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            color: white;
+            padding: 20px 10%;
+            text-align: center;
+            position: relative;
+        }
+        header .logo {
+            height: auto;
+        }
+        header button {
+            background: white;
+            color: var(--primary-color);
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        header button:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        main {
+            display: flex;
+            flex: 1;
+            padding: 20px 10%;
+            flex-direction: row;
+        }
+        .text-content, .video-content {
+            flex: 1;
+        }
+        iframe {
+            width: 100%;
+            max-width: 100%;
+            height: 300px; /* Adjust height as necessary */
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .social-icons a {
+            font-size: 24px;
+            margin-right: 20px;
+        }
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            .video-content {
+                order: -1; /* Places the video above the text content on small screens */
+            }
+            header .logo {
+                max-width: 220px; /* Smaller size for mobile and tablet */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo-bwolfoftheroad.svg" alt="Bwolf Agency Logo" class="logo">
+        </header>
+    <main>
+        <div class="text-content">
+            <section>
+                <h2>Kontakt do nas</h2>
+                <p><a href="mailto:artur@bwolfofftheroad.eu">artur@bwolfofftheroad.eu</a></p>
+                <p><a href="mailto:kamil@bwolfofftheroad.eu">kamil@bwolfofftheroad.eu</a></p>
+            </section>
+            <section class="social-icons">
+                <h2>Śledz nas</h2>
+                <a title="BWolf on Facebook" href="https://www.facebook.com/BWolfOffTheRoad"><i class="fab fa-facebook-f"></i></a>
+                <a title="BWolf on Instagram" href="https://www.instagram.com/Bwolfofftheroad/"><i class="fab fa-instagram"></i></a>
+                <a title="BWolf on TikTok" href="https://www.tiktok.com/@Bwolfofftheroad"><i class="fab fa-tiktok"></i></a>
+                <a title="BWolf on YouTube" href="https://www.youtube.com/@bwolfofftheroad/"><i class="fab fa-youtube"></i></a>
+            </section>
+            <section>
+                <h2>Siedziba</h2>
+                <address>
+                    <p>BWolf Agency Sp. z o.o.</p>
+                    <p>ul. Zgierska 115, 91-473 Łódź, Poland</p>
+                    <p>NIP: 7262697595</p>
+                </address>
+            </section>
+        </div>
+        <div class="video-content">
+            <section>
+                <h2>Nasz ostatni event</h2>
+                <iframe title="Film z ostatniego wydarzenia na YouTube" src="https://www.youtube.com/embed/RqAEhlQmP1Y" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Bwolf Agency. All rights reserved.</p>
+    </footer>
+</body>
+</html>
