@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -44,6 +45,7 @@
             text-align: center;
             position: relative;
         }
+
         section {
             max-width: 800px;
         }
@@ -77,6 +79,11 @@
         }
 
         .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
             font-size: 24px;
             margin-right: 20px;
         }
@@ -90,9 +97,10 @@
             position: fixed;
             bottom: 0;
         }
+
         @media (max-width: 768px) {
             header .logo {
-                max-width: 220px; /* Smaller size for mobile and tablet */
+                max-width: 220px;
             }
         }
     </style>
@@ -100,42 +108,43 @@
 
 <body>
     <header>
-        <img src="images/bwolf.svg" alt="Bwolf Agency Logo" class="logo">
+        <img src="images/bwolf.svg" alt="Bwolf Agency Logo" class="logo" width="300" height="100" width="300" height="100" loading="lazy">
     </header>
     <main class="center">
         <div class="text-content">
             <center>
-            <section>
-                <h2>Nasz ostatni event</h2>
-                <iframe title="Film z ostatniego wydarzenia na YouTube" src="https://www.youtube.com/embed/yALe5kcQSCM"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </section>
-            <section>
-                <h2>Kontakt do nas</h2>
-                <p><a href="mailto:artur@bwolfofftheroad.eu">artur@bwolfofftheroad.eu</a></p>
-                <p><a href="mailto:kamil@bwolfofftheroad.eu">kamil@bwolfofftheroad.eu</a></p>
-            </section>
-            <section class="social-icons">
-                <h2>Śledz nas</h2>
-                <a title="BWolf on Facebook" href="https://www.facebook.com/BWolfOffTheRoad"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a title="BWolf on Instagram" href="https://www.instagram.com/Bwolfofftheroad/"><i
-                        class="fab fa-instagram"></i></a>
-                <a title="BWolf on TikTok" href="https://www.tiktok.com/@Bwolfofftheroad"><i
-                        class="fab fa-tiktok"></i></a>
-                <a title="BWolf on YouTube" href="https://www.youtube.com/@bwolfofftheroad/"><i
-                        class="fab fa-youtube"></i></a>
-            </section>
-            <section>
-                <h2>Siedziba</h2>
-                <address>
-                    <p>BWolf Agency Sp. z o.o.</p>
-                    <p>ul. Zgierska 115, 91-473 Łódź, Poland</p>
-                    <p>NIP: 7262697595</p>
-                </address>
-            </section>
-        </center>
+                <section>
+                    <h2>Nasz ostatni event</h2>
+                    <iframe title="Film z ostatniego wydarzenia na YouTube" src="https://www.youtube.com/embed/yALe5kcQSCM"
+                        width="560" height="315" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </section>
+                <section>
+                    <h2>Kontakt do nas</h2>
+                    <p><a href="mailto:artur@bwolfofftheroad.eu">artur@bwolfofftheroad.eu</a></p>
+                    <p><a href="mailto:kamil@bwolfofftheroad.eu">kamil@bwolfofftheroad.eu</a></p>
+                </section>
+                <section class="social-icons">
+                    <h2>Śledź nas</h2>
+                    <a title="BWolf on Facebook" href="https://www.facebook.com/BWolfOffTheRoad"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a title="BWolf on Instagram" href="https://www.instagram.com/Bwolfofftheroad/"><i
+                            class="fab fa-instagram"></i></a>
+                    <a title="BWolf on TikTok" href="https://www.tiktok.com/@Bwolfofftheroad"><i
+                            class="fab fa-tiktok"></i></a>
+                    <a title="BWolf on YouTube" href="https://www.youtube.com/@bwolfofftheroad/"><i
+                            class="fab fa-youtube"></i></a>
+                </section>
+                <section>
+                    <h2>Siedziba</h2>
+                    <address>
+                        <p>BWolf Agency Sp. z o.o.</p>
+                        <p>ul. Zgierska 115, 91-473 Łódź, Poland</p>
+                        <p>NIP: 7262697595</p>
+                    </address>
+                </section>
+            </center>
         </div>
     </main>
     <footer>
